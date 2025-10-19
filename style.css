@@ -158,51 +158,52 @@ nav ul li a:hover {
 
 /* --- VERSION DESKTOP --- */
 @media (min-width: 768px) {
- 
+  /* On enlève seulement le fond et l’espace de header-content, mais on garde la nav */
   .header-content {
-    background: none;   
-    height: auto;       
+    background: none;   /* enlève le fond */
+    height: auto;       /* laisse la nav respirer */
     padding: 0;
     margin: 0;
   }
-  h1 {
-    display: none;
-  }
-  .menu-toggle {
-    display: none;
+
+  /* On cache le h1 */
+  .header-content h1 {
+    display: none !important;
   }
 
-    /* === NAVIGATION === */
+  /* On masque le bouton burger */
+  .menu-toggle {
+    display: none !important;
+  }
+
+  /* === NAVIGATION === */
   nav {
-    position: fixed; 
+    position: fixed; /* reste visible en haut */
     top: 0;
     left: 0;
     width: 100%;
-    height: 60px; /* hauteur standard */
-    background: #263c50; /* même couleur que ton header */
+    height: 70px;
+    background: #263c50; /* garde un fond visible */
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
-    right: 0; 
+    z-index: 2000;
     transition: none;
+    right: 0;
   }
 
   nav ul {
     display: flex;
+    flex-direction: row;
     gap: 30px;
     list-style: none;
     padding: 0;
     margin: 0;
   }
 
-  nav ul li {
-    margin: 0;
-  }
-
   nav ul li a {
-    font-size: 18px;
     color: var(--color3);
+    font-size: 18px;
     text-decoration: none;
     transition: color 0.3s;
   }
@@ -210,6 +211,7 @@ nav ul li a:hover {
   nav ul li a:hover {
     color: #00bfff;
   }
+}
 
 section{
     max-width:100vw;
@@ -222,12 +224,13 @@ section{
     margin-bottom: 100px;
     background: var(--color1);
     padding: 20px;
+    
     width: 100vw;
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
     color: var(--color3);
     margin-top: -60px;
-    height: 40vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -260,7 +263,6 @@ section{
 @media (min-width: 768px) {
   #accueil {
     margin-top: 0;
-    height: 50vh;
   }
 }
 #services{
@@ -544,6 +546,17 @@ td a{
     border-radius: 5px;
     font-size: 16px;
 }
+.form-group select{
+    appearance: none;         
+  -webkit-appearance: none;   
+  -moz-appearance: none; 
+   
+}
+.form-group select option{
+  background-color: var(--color2);
+  color: var(--color3);
+
+}
 
 button{
      background: var(--color2);
@@ -595,13 +608,11 @@ footer {
 }
 .link ul{
     margin-top: 10px;
-    color: gray;
-
+    color: grey;
 }
 .services ul{
     margin-top: 10px;
-    color: gray;
-
+    color: grey;
 }
 .contact ul{
     margin-top: 10px;
