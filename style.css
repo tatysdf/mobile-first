@@ -333,7 +333,7 @@ section{
 }
 #tarifs p{
     text-align: center;
-    font-size: 28px;
+    font-size: 18px;
     margin-bottom: 20px;
     color:var(--color2)
 }
