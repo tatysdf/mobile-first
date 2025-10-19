@@ -220,28 +220,19 @@ section{
 }
 
 #accueil{
-    text-align: center;
-    margin-bottom: 100px;
-    background: var(--color1);
-    padding: 10px;
-    
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
-    color: var(--color3);
-    margin-top: -60px;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 50vh;
-    height: auto;
-    padding: calc(70px + 20px) 20px 40px; /* laisse de la place pour le header fixe */
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 100%;
-    overflow: visible;
+      text-align: center;
+  background: var(--color1);
+  color: var(--color3);
+  margin: 0 auto 100px;
+  padding: calc(70px + 20px) 20px 40px; /* espace pour header fixe */
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden; /* empêche tout débordement horizontal */
 
 }
 #accueil h2{
@@ -648,6 +639,7 @@ footer p {
     position: relative;
     top:9px;
     left: 45px;
+    
 }
 }
 
