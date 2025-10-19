@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <link
@@ -161,59 +162,64 @@
       </section>
 
       <section id="contact">
-        <h2>Contact</h2>
-        <p>Contactez-nous pour plus d'informations.</p>
+        <div class="contact1">
+          <h2>Contact</h2>
+          <p>Contactez-nous pour plus d'informations.</p>
+        </div>
+        <div class="contact2">
+          <form action="post" class="form-content">
+            <div class="form-group">
+              <label for="full-name">Nom complet</label>
+              <input
+                type="text"
+                id="full-name"
+                name="fullName"
+                placeholder="Votre nom complet"
+                required
+              />
+            </div>
 
-        <form action="post" class="form-content">
-          <div class="form-group">
-            <label for="full-name">Nom complet</label>
-            <input
-              type="text"
-              id="full-name"
-              name="fullName"
-              placeholder="Votre nom complet"
-              required
-            />
-          </div>
+            <div class="form-group">
+              <label for="email">Adresse mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="votre@email.com"
+                required
+              />
+            </div>
 
-          <div class="form-group">
-            <label for="email">Adresse mail</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="votre@email.com"
-              required
-            />
-          </div>
+            <div class="form-group">
+              <label for="service">Service intéressé</label>
+              <select id="service" name="service" required>
+                <option value="" selected>
+                  Choisissez un service
+                </option>
+                <option value="design">Design Innovant</option>
+                <option value="developpement">Développement web</option>
+                <option value="marketing">Marketing Digital</option>
+                <option value="ecommerce">E-commerce</option>
+                <option value="premium">Premium / Sur mesure</option>
+              </select>
+            </div>
 
-          <div class="form-group">
-            <label for="service">Service intéressé</label>
-            <select id="service" name="service" required>
-              <option value="" disabled selected>Choisissez un service</option>
-              <option value="design">Design Innovant</option>
-              <option value="developpement">Développement web</option>
-              <option value="marketing">Marketing Digital</option>
-              <option value="ecommerce">E-commerce</option>
-              <option value="premium">Premium / Sur mesure</option>
-            </select>
-          </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Décrivez votre projet ou vos besoins"
+                required
+              ></textarea>
+            </div>
 
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="5"
-              placeholder="Décrivez votre projet ou vos besoins"
-              required
-            ></textarea>
-          </div>
-
-          <div class="form-actions">
-            <button type="submit">Envoyer</button>
-          </div>
-        </form>
+            <div class="form-actions">
+              <button type="submit">Envoyer</button>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
 
@@ -281,7 +287,7 @@
               </li>
               <li><i class="fa-solid fa-chevron-right"></i> E‑commerce</li>
               <li>
-                <i class="fa-solid fa-chevron-right"></i> Premium / Sur mesure
+                <i class="fa-solid fa-chevron-right"></i> Premium
               </li>
             </ul>
           </div>

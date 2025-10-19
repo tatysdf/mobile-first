@@ -425,7 +425,10 @@ td a{
     background: #ecf0f1;
     width: 90%;
     border-radius: 10px;
-    height: 70vh;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 20% 80%;
+    gap: 10px;
 }
 #contact h2{
     text-align: center;
@@ -440,6 +443,9 @@ td a{
     color:var(--color2);
     margin-bottom: 25px;
     
+}
+.contact2{
+    margin-bottom: 20px;
 }
 .form-content{
     display: flex;
@@ -464,6 +470,7 @@ td a{
     border: 1px solid gray;
     padding: 10px;
     border-radius: 5px;
+    font-size: 16px;
 }
 
 button{
