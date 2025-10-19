@@ -223,7 +223,7 @@ section{
     text-align: center;
     margin-bottom: 100px;
     background: var(--color1);
-    padding: 20px;
+    padding: 10px;
     
     width: 100vw;
     margin-left: calc(50% - 50vw);
@@ -235,6 +235,13 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 50vh;
+    height: auto;
+    padding: calc(70px + 20px) 20px 40px; /* laisse de la place pour le header fixe */
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    overflow: visible;
 
 }
 #accueil h2{
