@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="header-content">
+      <h1>Mon Site</h1>
+      <header>
+        <div class="menu-toggle" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <nav id="main-nav">
+          <ul>
+            <li>
+              <a href="#accueil"> <i class="fa-solid fa-house"></i> Accueil</a>
+            </li>
+            <li>
+              <a href="#services">
+                <i class="fa-solid fa-briefcase"></i> Services</a
+              >
+            </li>
+            <li>
+              <a href="#tarifs">
+                <i class="fa-solid fa-dollar-sign"></i> Tarifs</a
+              >
+            </li>
+            <li>
+              <a href="#apropos">
+                <i class="fa-solid fa-info-circle"></i> À propos</a
+              >
+            </li>
+            <li>
+              <a href="#contact">
+                <i class="fa-solid fa-envelope"></i> Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <main>
+      <section id="accueil">
+        <h2>Créons quelque chose d'extraordinaire</h2>
+        <p>
+          Nous sommes une agence créative spécialisée dans le design et le
+          développement web. Notre mission est de transformer vos idées en
+          expériences digitales mémorables.
+        </p>
+
+        <a href="#contact">Contactez-nous</a>
+      </section>
+
+      <section id="services">
+        <h2>Nos Services</h2>
+        <p>
+          Découvrez comment nous pouvons vous aider à atteindre vos objectifs
+        </p>
+
+        <div class="services-container">
+          <div class="service-card">
+            <i class="fa-solid fa-lightbulb"></i>
+            <h3>Design Innovant</h3>
+            <p>Création de designs modernes et responsives.</p>
+          </div>
+
+          <div class="service-card">
+            <i class="fa-solid fa-rocket"></i>
+            <h3>Développement web</h3>
+            <p>Développement de sites web performants et sécurisés.</p>
+          </div>
+
+          <div class="service-card">
+            <i class="fa-solid fa-chart-line"></i>
+            <h3>Marketing Digital</h3>
+            <p>Stratégies pour augmenter votre visibilité en ligne.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="tarifs">
+        <h2>Tarifs</h2>
+        <p>Choisissez la formule qui correspond le mieux à vos besoins</p>
+        <table>
+          <thead class="thead">
+            <tr>
+              <th>Forfait</th>
+              <th>Description</th>
+              <th>Fonctionnalités</th>
+              <th>Prix</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-white">
+              <td>Basique</td>
+              <td>Idéal pour les petites entreprises</td>
+              <td>
+                Site vitrine 5 pages, design responsive, formulaire de contact
+              </td>
+              <td class="prix">1200€</td>
+              <td><a href="#contact">Choisir</a></td>
+            </tr>
+            <tr class="bg-gray">
+              <td>Professionnel</td>
+              <td>Solution complète Populaire pour les PME</td>
+              <td>
+                Sites jusqu'a 15 pages, design sur mesure, référencement basique
+                hébergement 1 an
+              </td>
+              <td class="prix">2500€</td>
+              <td><a href="#contact">Choisir</a></td>
+            </tr>
+            <tr class="bg-white">
+              <td>E-commerce</td>
+              <td>Boutique en ligne complète</td>
+              <td>Design sur mesure, SEO avancé, Marketing digital complet</td>
+              <td class="prix">4800€</td>
+              <td><a href="#contact">Choisir</a></td>
+            </tr>
+            <tr class="bg-gray">
+              <td>Premium</td>
+              <td>Solution personnalisée pour vos besoins spécifiques</td>
+              <td>Tout ce dont vous avez besoin, discutons-en !</td>
+              <td class="prix">Sur devis</td>
+              <td><a href="#contact">Choisir</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="apropos">
+        <h2>À propos</h2>
+        <p>Notre histoire et notre approche</p>
+        <h4>Notre passion pour l'excellence</h4>
+        <p>
+          Fondée en 2015, notre agence s'est rapidement imposée comme un acteur
+          majeur dans le domaine du design et du développement web. Notre équipe
+          de passionnés travaille sans relâche pour offrir à nos clients des
+          solutions innovantes et efficaces. Nous croyons en la puissance du
+          design pour transformer les entreprises et créer des expériences
+          utilisateur exceptionnelles. Chaque projet est une nouvelle
+          opportunité de repousser les limites de la créativité et de la
+          technologie.
+        </p>
+        <a href="#services">En savoir plus</a>
+        <img
+          src="./assets/images/photo-1522071820081-009f0129c71c.webp"
+          alt="Notre équipe au travail"
+        />
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Contactez-nous pour plus d'informations.</p>
+
+        <form action="post" class="form-content">
+          <div class="form-group">
+            <label for="full-name">Nom complet</label>
+            <input
+              type="text"
+              id="full-name"
+              name="fullName"
+              placeholder="Votre nom complet"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Adresse mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="votre@email.com"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="service">Service intéressé</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Choisissez un service</option>
+              <option value="design">Design Innovant</option>
+              <option value="developpement">Développement web</option>
+              <option value="marketing">Marketing Digital</option>
+              <option value="ecommerce">E-commerce</option>
+              <option value="premium">Premium / Sur mesure</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Décrivez votre projet ou vos besoins"
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit">Envoyer</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="informations">
+        <div class="site">
+          <h4 class="line">MonSite</h4>
+          <p>
+            Nous créons des expériences digitales exceptionnelles qui
+            transforment les entreprises et engagent les utilisateurs.
+          </p>
+          <ul>
+            <li>
+              <i class="fa-brands fa-facebook"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-twitter"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-instagram"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-linkedin"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="link">
+          <h4 class="line">Liens rapides</h4>
+          <ul>
+            <li>
+              <a href="#accueil">
+                <i class="fas fa-chevron-right"></i> Accueil</a
+              >
+            </li>
+            <li>
+              <a href="#services">
+                <i class="fas fa-chevron-right"></i> Services</a
+              >
+            </li>
+            <li>
+              <a href="#tarifs"> <i class="fas fa-chevron-right"></i>Tarifs</a>
+            </li>
+            <li>
+              <a href="#apropos">
+                <i class="fas fa-chevron-right"></i> À propos</a
+              >
+            </li>
+            <li>
+              <a href="#contact">
+                <i class="fas fa-chevron-right"></i> Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="services">
+          <div class="services">
+            <h4 class="line">Services</h4>
+            <ul>
+              <li><i class="fa-solid fa-chevron-right"></i> Design Innovant</li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i> Développement web
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i> Marketing Digital
+              </li>
+              <li><i class="fa-solid fa-chevron-right"></i> E‑commerce</li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i> Premium / Sur mesure
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="contact">
+          <h4 class="line">Contact</h4>
+          <ul>
+            <li><i class="fa-solid fa-location-dot"></i> Paris, FRANCE</li>
+            <li><i class="fa-solid fa-map"></i> Cachan</li>
+            <li><i class="fa-solid fa-envelope"></i> taty@gmail.com</li>
+            <li><i class="fa-solid fa-phone"></i> +33604487433</li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <p>&copy; 2023 MonSite. Tous droits réservés.</p>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
