@@ -595,9 +595,13 @@ footer {
 }
 .link ul{
     margin-top: 10px;
+    color: gray;
+
 }
 .services ul{
     margin-top: 10px;
+    color: gray;
+
 }
 .contact ul{
     margin-top: 10px;
